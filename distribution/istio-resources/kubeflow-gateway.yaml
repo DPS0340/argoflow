@@ -8,16 +8,16 @@ spec:
     istio: ingressgateway
   servers:
   - hosts:
-    - <<__subdomain_dashboard__>>.<<__domain__>>
+    - "localhost"
     port:
       name: http
       number: 80
       protocol: HTTP
     # Upgrade HTTP to HTTPS
     tls:
-      httpsRedirect: true
+      httpsRedirect: false
   - hosts:
-    - <<__subdomain_dashboard__>>.<<__domain__>>
+    - "localhost"
     port:
       name: https
       number: 443
