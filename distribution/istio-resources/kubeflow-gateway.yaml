@@ -11,7 +11,7 @@ spec:
     - "kubeflow.dps0340.xyz"
     port:
       name: http
-      number: 80
+      number: 5052
       protocol: HTTP
     # Upgrade HTTP to HTTPS
     tls:
